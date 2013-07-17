@@ -5,6 +5,9 @@ namespace Nupload
 	public interface IUploadConfiguration
 	{
 		IDictionary<string, string> FormAttributes { get; }
+        IDictionary<string, string> AltFormAttributes { get; }
+
 		IDictionary<string, string> FormFields { get; }
+		
 	}
 }

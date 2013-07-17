@@ -89,7 +89,9 @@
     <Content Include="Scripts\fileupload\main.js" />
     <Content Include="Scripts\fileupload\vendor\jquery.ui.widget.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

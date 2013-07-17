@@ -44,6 +44,20 @@ namespace Nupload
 			}
 		}
 
+		public IDictionary<string, string> AltFormAttributes
+		{
+			get
+			{
+				var actionUrl = new Uri(string.Format("https://{0}.storage.googleapis.com/", _bucket));
+				return new Dictionary<string, string>
+					{
+						{ "accept-charset", _encoding.HeaderName },
+						{ "action", actionUrl.OriginalString },
+						{ "method", HtmlHelper.GetFormMethodString(Method) },
+					};
+			}
+		}
+
 		public IDictionary<string, string> FormFields
 		{
 			get
