@@ -1,3 +1,11 @@
+# This Fork #
+
+Added methods to support https://s3.amazonaws.com/{bucketName} in FormBuilder. It didn't work for me with the https://{bucketname}.s3.amazonaws.com/ url. 
+
+Methods are as follows:
+- BeginAsyncUploadFormAlt as apposed to BeginAsyncUploadForm, HtmlHelper extension this version will output https://s3.amazonaws.com/{bucketName}
+
+
 # Introduction #
 
 Nupload makes it easy to support signed object downloads and asynchronous CORS-enabled form uploads to and from Amazon S3 and Google Cloud Storage
